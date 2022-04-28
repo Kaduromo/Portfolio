@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="theme-switch-wrapper">
+		<label class="theme-switch" for="checkbox">
+			<input type="checkbox" id="checkbox" />
+			<div class="slider round"></div>
+		</label>
+		<p>Dark Mode!</p>
+	</div>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__container">
+				<div class="header_blok">
+					<nav class="header_navigation">
+						<ul class="header_nav">
+							<li class="header_item"><a data-goto=".about" href="#" class="header_link goto_smooth">Обо мне </a></li>
+							<li class="header_item"><a data-goto=".portfolio" href="#" class="header_link goto_smooth">Портфолио</a></li>
+							<li class="header_item"><a data-goto=".stage" href="#" class="header_link goto_smooth">Этапы работ</a></li>
+							<li class="header_item"><a data-goto=".price" href="#" class="header_link goto_smooth">Цены</a></li>
+							<li class="header_item"><a data-goto=".feedback" href="#" class="header_link goto_smooth">Обратная связь</a></li>
+						</ul>
+						<ul class="header_nav__mob">
+							<li><a href="https://vk.com/feed" target="_blank">Vk</a></li>
+							<li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+							<li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+						</ul>
+					</nav>
+					<a class="header_tel" href="tel:89237777777">8 923 777-77-77</a>
+					<ul data-da=".header_navigation, 864, 1" class="header_info">
+						<li class="header_info-tel"><a href="tel:89237777777">8 923 777-77-77</a></li>
+						<li class="header_info-email"><a href="maito:alexdev@gmail.com">alexdev@gmail.com</a></li>
+					</ul>
+					<button class="header_menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="banner">
+				<div class="container">
+					<div class="banner_image">
+						<img src="img/banner.png" alt="Разработчк">
+					</div>
+					<div class="banner_name">
+						<div class="banner_name__circle circle">
+							<div class="banner_name__triangle triangle"></div>
+						</div>
+						<h2 class="banner_name__text">Александр Антропов</h2>
+						<h1 class="banner_name__title title">web-разработчик</h1>
+					</div>
+					<div class="banner_project border_bottom">
+						<div class="banner_project__text"><button data-modal="modal_feedback">Обсудить проект<span class="_icon-arrow"></span></button></div>
+						<div class="banner_project__social">
+							<ul>
+								<li><a href="https://vk.com/feed" target="_blank">Vk</a></li>
+								<li>
+									<a href="https://www.instagram.com" target="_blank">Instagram</a>
+									<p class="circle">
+										</з>
+								</li>
+								<li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="banner_info">
+						<div class="banner_info__text">
+							<p>FRONT-END
+								<span>HTML+CSS+JS кодирование дизайнов любой сложности</span>
+							</p>
+						</div>
+						<div class="banner_info__text">
+							<p>Back-end
+								<span>Разработка сложной back-end логики для готового front-end</span>
+							</p>
+						</div>
+						<div class="banner_info__text">
+							<p>WORDPRESS
+								<span>Разработка сайтов - от блога до интернет магазина</span>
+							</p>
+						</div>
+						<div class="banner_info__text">
+							<p>SEO продвижение
+								<span>Качественное улучшение позиций сайта в поисковой выдаче</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="about">
+				<div class="container">
+					<div class="about_block border_bottom">
+						<h2 class="about_block__title title">Обо мне</h2>
+						<p class="about_block__text text">Создаю только эффективные решения, которые работают на результат: от&nbsp;одностраничных сайтов, до крупных интернет-порталов.</p>
+					</div>
+					<div class="about_quality">
+						<div class="about_quality__item">
+							<p>Контроль
+								<span>Предоставление результатов на каждом этапе работы с возможностью внести правки</span>
+							</p>
+						</div>
+						<div class="about_quality__item">
+							<p>Ответственность
+								<span>Фриланс как основная деятельность, что означает полную отдачу в&nbsp;процессе работы над заказом</span>
+							</p>
+						</div>
+						<div class="about_quality__item">
+							<p>Исполнительность
+								<span>Внимательность ко всем требованиям заказчика и прояснение любых моментов</span>
+							</p>
+						</div>
+						<div class="about_quality__item">
+							<p>Качество
+								<span>Высокое качество как графических материалов, так и внутренних алгоритмов работы сайта</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="stage">
+				<div class="container">
+					<div class="stage_item">
+						<p class="stage_item__title"><span>01</span>Вы заказываете сайт</p>
+						<p class="stage_item__text text">Связываетесь со мной по телефону или через заявку на сайте</p>
+					</div>
+					<div class="stage_item">
+						<p class="stage_item__title"><span>02</span>Обговариваем детали</p>
+						<p class="stage_item__text text">Созваниваемся или списываемся любым удобным для вас способом</p>
+					</div>
+					<div class="stage_item">
+						<p class="stage_item__title"><span>03</span>Этап программирования</p>
+						<p class="stage_item__text text">Верстаю сайт по вашему проекту пиксель в пиксель</p>
+					</div>
+				</div>
+			</div>
+			<section class="portfolio">
+				<div class="container">
+					<div class="portfolio_title title">
+						<h2>Портфолио</h2>
+						<div class="portfolio_title__circle circle"></div>
+					</div>
+				</div>
+				<div class="portfolio_work">
+					<div class="container">
+						<div class="portfolio_work__item border_bottom">
+							<div class="portfolio_work__info">
+								<a href="https://kaduromo.github.io/Module01-Gym/" target="_blank" class="portfolio_work__text">Gym</a>
+								<ul class="portfolio_work__feature">
+									<li>– верстка по макету из Figma</li>
+									<li>– наполнение сайта контентом</li>
+									<li>– адаптивные изображения</li>
+								</ul>
+								<p class="portfolio_work__time">Затрачено времени: 5 рабочих дней</p>
+							</div>
+							<div class="portfolio_work__image">
+								<img src="img/portfolio/gym.png" alt="gym">
+							</div>
+						</div>
+						<div class="portfolio_work__item border_bottom">
+							<div class="portfolio_work__info">
+								<a href="https://kaduromo.github.io/Module02-Shop/dist/" target="_blank" class="portfolio_work__text">Healthy food</a>
+								<ul class="portfolio_work__feature">
+									<li>– верстка по макету из PSD</li>
+									<li>– добавлена аннимация тени</li>
+									<li>– лендинг</li>
+								</ul>
+								<p class="portfolio_work__time">Затрачено времени: 7 рабочих дней</p>
+							</div>
+							<div class="portfolio_work__image">
+								<img src="img/portfolio/shop.png" alt="shop">
+							</div>
+						</div>
+						<div class="portfolio_work__item border_bottom">
+							<div class="portfolio_work__info">
+								<a href="https://kaduromo.github.io/Womazing/dist/main.html" target="_blank" class="portfolio_work__text">Womazing</a>
+								<ul class="portfolio_work__feature">
+									<li>– верстка по макету из Figma</li>
+									<li>– реализован слайдер с автозапуском</li>
+									<li>– многостраничный сайт</li>
+								</ul>
+								<p class="portfolio_work__time">Затрачено времени: 14 рабочих дней</p>
+							</div>
+							<div class="portfolio_work__image">
+								<img src="img/portfolio/womazing.png" alt="womazing">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="container">
+					<div class="advantages_text border_bottom">
+						<p>Помимо создания сайтов и посадочных страниц я занимаюсь: настройкой контекстной рекламы в системах Яндекс.Директ и Google AdWords, а так же поисковым продвижением сайтов</p>
+					</div>
+					<div class="advantages__block">
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-money"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Актуальные цены</p>
+								<p class="advantages_item__text text">Ничего лишнего, без переплат, 100% отработка ваших денег</p>
+							</div>
+						</div>
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-skills"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Более 2-х лет опыта</p>
+								<p class="advantages_item__text text">Это моя основная деятельность, создано более 150+ сайтов</p>
+							</div>
+						</div>
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-clock"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Оптимальные сроки</p>
+								<p class="advantages_item__text text">Создание сайта любой сложности в самые сжатые сроки</p>
+							</div>
+						</div>
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-phone"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Всегда на связи</p>
+								<p class="advantages_item__text text">Не теряюсь и не проматываю сроки. Подхожу ответственно</p>
+							</div>
+						</div>
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-code"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Чистый код</p>
+								<p class="advantages_item__text text">HTML код без всего лишнего, плюс адаптив под все устройства</p>
+							</div>
+						</div>
+						<div class="advantages_item">
+							<div class="advantages_item__icon _icon-support"></div>
+							<div class="advantages_item__descripton">
+								<p class="advantages_item__title text">Поддержка сайта</p>
+								<p class="advantages_item__text text">Быстро устраню любую проблему на вашем сайте</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="tech">
+				<div class="container">
+					<div class="tech_block">
+						<div class="tech_item ">
+							<div data-tippy-content="Язык гипертекстовой разметки" class="tech_item__image">
+								<img src="img/icon/html.svg" alt="html">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Каскадные таблицы стилей" class="tech_item__image">
+								<img src="img/icon/css.svg" alt="css">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам" class="tech_item__image">
+								<img src="img/icon/js.svg" alt="js">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Популярная баблиотека JavaScript" class="tech_item__image">
+								<img src="img/icon/jquery.svg" alt="jquery">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Популярный CSS фреймворк" class="tech_item__image">
+								<img src="img/icon/bootstrap.svg" alt="bootstrap">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Серверный язык программирования" class="tech_item__image">
+								<img src="img/icon/php.svg" alt="php">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="JS-фреймворк для создания пользовательских интерфейсов" class="tech_item__image">
+								<img src="img/icon/vue.svg" alt="vue">
+							</div>
+						</div>
+						<div class="tech_item">
+							<div data-tippy-content="Популярная CMS для создания блогов" class="tech_item__image">
+								<img src="img/icon/wp.svg" alt="wp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="price">
+				<div class="container">
+					<div class="price_block border_bottom">
+						<div class="price_block__circle circle"></div>
+						<h2 class="price_block__title title">Тарифы</h2>
+						<p class="price_block__text text">Представленные ниже цены зависят не только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
+					</div>
+					<div class="price_item border_bottom">
+						<div class="price_list">
+							<p class="price_list__title"><span>Разработка</span>лэндинга или сайт визитки</p>
+							<p class="price_list__text">Небольшой сайт состоящий из одной страницы</p>
+							<button data-modal="modal_feedback" class="price_list__link">
+								Обсудить проект
+								<span class="_icon-arrow"></span>
+							</button>
+						</div>
+						<div class="price_kit">
+							<p class="price_kit__title">Что входит</p>
+							<ul class="price_kit__text">
+								<li>Сайт на CMS WordPress</li>
+								<li>Одна посадочная страница</li>
+								<li>От 7 дней</li>
+							</ul>
+							<div class="price_kit__prices">
+								<div class="price_kit__circle circle"></div>
+								От 7 000 Р
+							</div>
+						</div>
+					</div>
+
+					<div class="price_item border_bottom">
+						<div class="price_list">
+							<p class="price_list__title"><span>Разработка</span>корпоративного сайта</p>
+							<p class="price_list__text">Небольшой сайт с n-количеством страниц</p>
+							<button data-modal="modal_feedback" class="price_list__link">
+								Обсудить проект
+								<span class="_icon-arrow"></span>
+							</button>
+						</div>
+						<div class="price_kit">
+							<p class="price_kit__title">Что входит</p>
+							<ul class="price_kit__text">
+								<li>Сайт на CMS WordPress</li>
+								<li>От 2-10 страниц </li>
+								<li>От 15 дней</li>
+							</ul>
+							<div class="price_kit__prices">
+								От 10 000 Р
+							</div>
+						</div>
+					</div>
+
+					<div class="price_item border_bottom">
+						<div class="price_list">
+							<p class="price_list__title"><span>Разработка</span>интернет - магазина</p>
+							<p class="price_list__text">Полноценный каталог вашей продукции</p>
+							<button data-modal="modal_feedback" class="price_list__link">
+								Обсудить проект
+								<span class="_icon-arrow"></span>
+							</button>
+						</div>
+						<div class="price_kit">
+							<p class="price_kit__title">Что входит</p>
+							<ul class="price_kit__text">
+								<li>Сайт на CMS WordPress</li>
+								<li>От 2-10 страниц, корзина, карточка товара</li>
+								<li>От 20 дней</li>
+							</ul>
+							<div class="price_kit__prices">
+								<div class="price_kit__circle circle"></div>
+								От 15 000 Р
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="feedback">
+				<div class="container">
+					<div class="feedback_block border_bottom">
+						<div class="feedback_block__circle circle">
+							<div class="feedback_block__triangle triangle"></div>
+						</div>
+						<h2 class="feedback_block__title title"><span>Расскажите </span>о своем проекте</h2>
+						<p class="feedback_block__text text">Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь с вами в ближайшее время</p>
+					</div>
+					<div class="feedback_list border_bottom">
+						<div class="feedback_list__social">
+							<ul>
+								<li><a href="https://vk.com/feed" target="_blank">Vk</a></li>
+								<li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+								<li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+							</ul>
+						</div>
+						<form id="form" class="feedback_list__form">
+							<label class="feedback_list__form-label">Телефон или почта</label>
+							<input type="tel" class="feedback_list__form-input _req _email" placeholder="Введите телефон" required></input>
+							<label class="feedback_list__form-label">Выберите удобный способ связи</label>
+							<div class="feedback_list__selectApp">
+								<div class="feedback_list__selectWrap">
+									<div id="select"></div>
+								</div>
+							</div>
+							<button class="feedback_list__btn" type="submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer_block">
+					<ul class="footer_block__item">
+						<li class="footer_block__list"><a data-goto=".about" href="#" class="goto_smooth">Обо мне</a></li>
+						<li class="footer_block__list"><a data-goto=".portfolio" href="#" class="goto_smooth">Портфолио</a></li>
+						<li class="footer_block__list"><a data-goto=".stage" href="#" class="goto_smooth">Этапы работ</a></li>
+						<li class="footer_block__list"><a data-goto=".price" href="#" class="goto_smooth">Цены</a></li>
+						<li class="footer_block__list"><a data-goto=".feedback" href="#" class="goto_smooth">Обратная связь</a></li>
+					</ul>
+					<ul class="footer_block__contact">
+						<li class="footer_block__tel"><a href="tel:89237777777">8 923 777-77-77</a></li>
+						<li class="footer_block__email"><a href="maiulto:alexdev@gmail.com">alexdev@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="footer_text">
+					<p class="footer__copy">&copy; 2020, Все права защищены</p>
+					<p class="footer__author">Сделано в рамках курса учебной платформы <a href="https://annblok.ru" target="_blank">Annblok</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal modal_feedback" id="modal_feedback">
+		<div class="modal-content">
+			<span class="close"></span>
+			<div class="modal-title border_bottom">
+				<h2 class="text">Расскажите о своем проекте</h2>
+				<p>Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+			</div>
+			<div class="modal-body">
+				<form id="form" class="modal_form">
+					<label class="modal_form__label">Телефон или почта</label>
+					<input type="tel" class="modal_form__tel _req _email" placeholder="Введите телефон" required></input>
+					<label class="modal_form__label">Выберите удобный способ связи</label>
+					<div class="modal_form__selectApp">
+						<div class="modal_form__selectWrap">
+							<div id="selected"></div>
+						</div>
+					</div>
+					<button class="modal_form__btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
